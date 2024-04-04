@@ -1,0 +1,449 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B859F4C-29F8-4015-808A-80D49609E8EE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TemplateIntegration</RootNamespace>
+    <AssemblyName>TemplateIntegration</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44316</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>packages\Microsoft.Web.Infrastructure.2.0.1\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="MainSiteContent\css\ajax-loader.gif" />
+    <Content Include="MainSiteContent\css\all.min.css" />
+    <Content Include="MainSiteContent\css\animate.css" />
+    <Content Include="MainSiteContent\css\blog.css" />
+    <Content Include="MainSiteContent\css\bootstrap.min.css" />
+    <Content Include="MainSiteContent\css\custom.css" />
+    <Content Include="MainSiteContent\css\flaticon.css" />
+    <Content Include="MainSiteContent\css\Flaticon.svg" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\ElegantIcons.svg" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\fontello4508.svg" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\Glyphter.svg" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\Pe-icon-7-strokebb1d.svg" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\themify9f24.svg" />
+    <Content Include="MainSiteContent\images\about\android5.jpg" />
+    <Content Include="MainSiteContent\images\about\AndroidApp2.jpg" />
+    <Content Include="MainSiteContent\images\about\AndroidApp3.jpg" />
+    <Content Include="MainSiteContent\images\about\AndroidApp4.jpg" />
+    <Content Include="MainSiteContent\images\about\chromeextension2.jpg" />
+    <Content Include="MainSiteContent\images\about\chromeextension3.jpg" />
+    <Content Include="MainSiteContent\images\about\chromeextension4.jpg" />
+    <Content Include="MainSiteContent\images\about\freelanceimg1.jpg" />
+    <Content Include="MainSiteContent\images\about\freelanceimg2.jpg" />
+    <Content Include="MainSiteContent\images\about\freelanceimg3.jpg" />
+    <Content Include="MainSiteContent\images\about\freelanceimg4.jpg" />
+    <Content Include="MainSiteContent\images\about\googlechromeextension1.jpg" />
+    <Content Include="MainSiteContent\images\about\Hubstaff Re-design.jpg" />
+    <Content Include="MainSiteContent\images\about\laptop-with-energy-mass-equivalence-formula-on-screen.jpg" />
+    <Content Include="MainSiteContent\css\lightcase.css" />
+    <Content Include="MainSiteContent\css\main.css" />
+    <Content Include="MainSiteContent\css\nice-select.css" />
+    <Content Include="MainSiteContent\css\odometer.css" />
+    <Content Include="MainSiteContent\css\owl.video.play.png" />
+    <Content Include="MainSiteContent\css\style.css" />
+    <Content Include="MainSiteContent\css\swiper.min.css" />
+    <Content Include="MainSiteContent\css\tables.css" />
+    <Content Include="MainSiteContent\css\vendors.css" />
+    <Content Include="MainSiteContent\fonts\lightcaseeead.svg" />
+    <Content Include="MainSiteContent\images\404-bg.jpg" />
+    <Content Include="MainSiteContent\images\404.png" />
+    <Content Include="MainSiteContent\images\about\about01.jpg" />
+    <Content Include="MainSiteContent\images\about\about02.jpg" />
+    <Content Include="MainSiteContent\images\about\about03.jpg" />
+    <Content Include="MainSiteContent\images\about\about04.jpg" />
+    <Content Include="MainSiteContent\images\about\about05.jpg" />
+    <Content Include="MainSiteContent\images\about\about06.jpg" />
+    <Content Include="MainSiteContent\images\about\about07.jpg" />
+    <Content Include="MainSiteContent\images\about\about08.jpg" />
+    <Content Include="MainSiteContent\images\about\AutoImg.jpg" />
+    <Content Include="MainSiteContent\images\about\BalanceProductivity.jpg" />
+    <Content Include="MainSiteContent\images\about\EmployeeTimesheet.jpeg" />
+    <Content Include="MainSiteContent\images\about\employeetimesheet3_1.jpeg" />
+    <Content Include="MainSiteContent\images\about\filters_format.jpg" />
+    <Content Include="MainSiteContent\images\about\Find_fix.jpg" />
+    <Content Include="MainSiteContent\images\about\hero-bg.jpg" />
+    <Content Include="MainSiteContent\images\about\productivity2.jpg" />
+    <Content Include="MainSiteContent\images\about\productivity3.jpg" />
+    <Content Include="MainSiteContent\images\about\productivity4.jpg" />
+    <Content Include="MainSiteContent\images\about\productuctivity1.jpg" />
+    <Content Include="MainSiteContent\images\about\timeTracking44.jpeg" />
+    <Content Include="MainSiteContent\images\about\TimeTrackingImg1.jpg" />
+    <Content Include="MainSiteContent\images\about\timetrackingimg2.jpg" />
+    <Content Include="MainSiteContent\images\about\timetrackingswimg1.jpg" />
+    <Content Include="MainSiteContent\images\about\trackingImg3.jpg" />
+    <Content Include="MainSiteContent\images\about\trackingsw6.jpg" />
+    <Content Include="MainSiteContent\images\about\trackingswimg3.jpg" />
+    <Content Include="MainSiteContent\images\about\trackingswimg4.jpg" />
+    <Content Include="MainSiteContent\images\about\trackingswimg7.jpg" />
+    <Content Include="MainSiteContent\images\about\TrackingToolImg.jpg" />
+    <Content Include="MainSiteContent\images\about\windowapp1.jpg" />
+    <Content Include="MainSiteContent\images\about\windowapp2 %282%29.jpg" />
+    <Content Include="MainSiteContent\images\about\windowapp3 %281%29.jpg" />
+    <Content Include="MainSiteContent\images\about\WindowApp5 %282%29.jpg" />
+    <Content Include="MainSiteContent\images\background\bg01.jpg" />
+    <Content Include="MainSiteContent\images\banner\banner-bg01.jpg" />
+    <Content Include="MainSiteContent\images\banner\banner-bg02.jpg" />
+    <Content Include="MainSiteContent\images\blog\blockquote.png" />
+    <Content Include="MainSiteContent\images\blog\blog-banner-bg.png" />
+    <Content Include="MainSiteContent\images\blog\blog01.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog01.png" />
+    <Content Include="MainSiteContent\images\blog\blog02.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog02.png" />
+    <Content Include="MainSiteContent\images\blog\blog03.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog04.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog05.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog06.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog07.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog08.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog09.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog10.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog11.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog12.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog13.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog14.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog15.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog16.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog17.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog18.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog19.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog20.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog21.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog22.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog23.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog24.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog25.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog26.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog27.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog28.jpg" />
+    <Content Include="MainSiteContent\images\blog\blog29.jpg" />
+    <Content Include="MainSiteContent\images\blog\video-button.png" />
+    <Content Include="MainSiteContent\images\call-in-action.jpg" />
+    <Content Include="MainSiteContent\images\cart\cart01.png" />
+    <Content Include="MainSiteContent\images\cart\cart02.png" />
+    <Content Include="MainSiteContent\images\cart\cart03.png" />
+    <Content Include="MainSiteContent\images\cart\cart04.png" />
+    <Content Include="MainSiteContent\images\cart\mastercard.jpg" />
+    <Content Include="MainSiteContent\images\cart\payoner.jpg" />
+    <Content Include="MainSiteContent\images\cart\paypal.jpg" />
+    <Content Include="MainSiteContent\images\cart\visa.jpg" />
+    <Content Include="MainSiteContent\images\client\client-quote.png" />
+    <Content Include="MainSiteContent\images\client\client-shape.png" />
+    <Content Include="MainSiteContent\images\client\client01.jpg" />
+    <Content Include="MainSiteContent\images\client\client02.jpg" />
+    <Content Include="MainSiteContent\images\client\client03.jpg" />
+    <Content Include="MainSiteContent\images\client\client04.jpg" />
+    <Content Include="MainSiteContent\images\client\client05.jpg" />
+    <Content Include="MainSiteContent\images\client\client06.jpg" />
+    <Content Include="MainSiteContent\images\course\course01.jpg" />
+    <Content Include="MainSiteContent\images\course\course02.jpg" />
+    <Content Include="MainSiteContent\images\course\course03.jpg" />
+    <Content Include="MainSiteContent\images\course\course04.jpg" />
+    <Content Include="MainSiteContent\images\course\course05.jpg" />
+    <Content Include="MainSiteContent\images\course\course06.jpg" />
+    <Content Include="MainSiteContent\images\course\course07.jpg" />
+    <Content Include="MainSiteContent\images\course\course08.jpg" />
+    <Content Include="MainSiteContent\images\course\course09.jpg" />
+    <Content Include="MainSiteContent\images\course\course10.jpg" />
+    <Content Include="MainSiteContent\images\event\event-partner01.png" />
+    <Content Include="MainSiteContent\images\event\event-partner02.png" />
+    <Content Include="MainSiteContent\images\event\event-partner03.png" />
+    <Content Include="MainSiteContent\images\event\event-partner04.png" />
+    <Content Include="MainSiteContent\images\event\event01.jpg" />
+    <Content Include="MainSiteContent\images\event\event02.jpg" />
+    <Content Include="MainSiteContent\images\event\event03.jpg" />
+    <Content Include="MainSiteContent\images\event\event04.jpg" />
+    <Content Include="MainSiteContent\images\event\event05.jpg" />
+    <Content Include="MainSiteContent\images\event\event06.jpg" />
+    <Content Include="MainSiteContent\images\event\event07.jpg" />
+    <Content Include="MainSiteContent\images\event\event08.jpg" />
+    <Content Include="MainSiteContent\images\event\event09.jpg" />
+    <Content Include="MainSiteContent\images\event\event10.jpg" />
+    <Content Include="MainSiteContent\images\favicon.png" />
+    <Content Include="MainSiteContent\images\footer.jpg" />
+    <Content Include="MainSiteContent\images\gallery\gallery01.jpg" />
+    <Content Include="MainSiteContent\images\gallery\gallery02.jpg" />
+    <Content Include="MainSiteContent\images\gallery\gallery03.jpg" />
+    <Content Include="MainSiteContent\images\gallery\gallery04.jpg" />
+    <Content Include="MainSiteContent\images\gallery\gallery05.jpg" />
+    <Content Include="MainSiteContent\images\gallery\gallery06.jpg" />
+    <Content Include="MainSiteContent\images\gallery\gallery07.jpg" />
+    <Content Include="MainSiteContent\images\gallery\gallery08.jpg" />
+    <Content Include="MainSiteContent\images\gallery\gallery09.jpg" />
+    <Content Include="MainSiteContent\images\gallery\gallery10.jpg" />
+    <Content Include="MainSiteContent\images\gallery\gallery11.jpg" />
+    <Content Include="MainSiteContent\images\instructor\ins-shape.png" />
+    <Content Include="MainSiteContent\images\instructor\instructor01.jpg" />
+    <Content Include="MainSiteContent\images\instructor\instructor01.png" />
+    <Content Include="MainSiteContent\images\instructor\instructor02.jpg" />
+    <Content Include="MainSiteContent\images\instructor\instructor02.png" />
+    <Content Include="MainSiteContent\images\instructor\instructor03.jpg" />
+    <Content Include="MainSiteContent\images\instructor\instructor03.png" />
+    <Content Include="MainSiteContent\images\instructor\instructor04.jpg" />
+    <Content Include="MainSiteContent\images\instructor\instructor04.png" />
+    <Content Include="MainSiteContent\images\instructor\instructor05.jpg" />
+    <Content Include="MainSiteContent\images\instructor\instructor05.png" />
+    <Content Include="MainSiteContent\images\instructor\instructor06.jpg" />
+    <Content Include="MainSiteContent\images\instructor\instructor06.png" />
+    <Content Include="MainSiteContent\images\instructor\instructor07.jpg" />
+    <Content Include="MainSiteContent\images\instructor\instructor08.jpg" />
+    <Content Include="MainSiteContent\images\instructor\instructor09.jpg" />
+    <Content Include="MainSiteContent\images\instructor\instructor10.jpg" />
+    <Content Include="MainSiteContent\images\logo\footer-logo.png" />
+    <Content Include="MainSiteContent\images\logo\logo.png" />
+    <Content Include="MainSiteContent\images\logo\sumagoimg.jpg" />
+    <Content Include="MainSiteContent\images\overview\overview-bg01.jpg" />
+    <Content Include="MainSiteContent\images\overview\overview-bg02.jpg" />
+    <Content Include="MainSiteContent\images\overview\overview-bg03.jpg" />
+    <Content Include="MainSiteContent\images\overview\overview-bg04.jpg" />
+    <Content Include="MainSiteContent\images\overview\overview-bg05.jpg" />
+    <Content Include="MainSiteContent\images\rocket.png" />
+    <Content Include="MainSiteContent\images\section-header-shape.png" />
+    <Content Include="MainSiteContent\images\shop\shop01.png" />
+    <Content Include="MainSiteContent\images\shop\shop02.png" />
+    <Content Include="MainSiteContent\images\shop\shop03.png" />
+    <Content Include="MainSiteContent\images\shop\shop04.png" />
+    <Content Include="MainSiteContent\images\shop\shop05.png" />
+    <Content Include="MainSiteContent\images\shop\shop06.png" />
+    <Content Include="MainSiteContent\images\shop\shop07.png" />
+    <Content Include="MainSiteContent\images\shop\shop08.png" />
+    <Content Include="MainSiteContent\images\shop\shop09.png" />
+    <Content Include="MainSiteContent\images\shop\shop10.png" />
+    <Content Include="MainSiteContent\images\shop\shop11.png" />
+    <Content Include="MainSiteContent\images\shop\shop12.png" />
+    <Content Include="MainSiteContent\images\widget-shape.png" />
+    <Content Include="MainSiteContent\images\wisher\wish01.jpg" />
+    <Content Include="MainSiteContent\images\wisher\wish02.jpg" />
+    <Content Include="MainSiteContent\images\wisher\wish03.jpg" />
+    <Content Include="MainSiteContent\images\wisher\wish04.jpg" />
+    <Content Include="MainSiteContent\images\wisher\wish05.jpg" />
+    <Content Include="MainSiteContent\js\bootstrap.min.js" />
+    <Content Include="MainSiteContent\js\contact.js" />
+    <Content Include="MainSiteContent\js\countdown.min.js" />
+    <Content Include="MainSiteContent\js\isotope.pkgd.min.js" />
+    <Content Include="MainSiteContent\js\jquery-3.3.1.min.js" />
+    <Content Include="MainSiteContent\js\jquery.ripples-min.js" />
+    <Content Include="MainSiteContent\js\jquery.vmap.min.js" />
+    <Content Include="MainSiteContent\js\jquery.vmap.world.js" />
+    <Content Include="MainSiteContent\js\lightcase.js" />
+    <Content Include="MainSiteContent\js\main.js" />
+    <Content Include="MainSiteContent\js\modernizr-3.6.0.min.js" />
+    <Content Include="MainSiteContent\js\nice-select.js" />
+    <Content Include="MainSiteContent\js\odometer.min.js" />
+    <Content Include="MainSiteContent\js\plugins.js" />
+    <Content Include="MainSiteContent\js\swiper.min.js" />
+    <Content Include="MainSiteContent\js\viewport.jquery.js" />
+    <Content Include="MainSiteContent\js\wow.min.js" />
+    <Content Include="MainSiteContent\webfonts\fa-brands-400.svg" />
+    <Content Include="MainSiteContent\webfonts\fa-regular-400.svg" />
+    <Content Include="MainSiteContent\webfonts\fa-solid-900.svg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="MainSiteContent\css\Flaticon.eot" />
+    <Content Include="MainSiteContent\css\Flaticon.ttf" />
+    <Content Include="MainSiteContent\css\Flaticon.woff" />
+    <Content Include="MainSiteContent\css\Flaticon.woff2" />
+    <Content Include="MainSiteContent\css\Flaticond41d.eot" />
+    <Content Include="MainSiteContent\fonts\lightcaseeead.eot" />
+    <Content Include="MainSiteContent\fonts\lightcaseeead.ttf" />
+    <Content Include="MainSiteContent\fonts\lightcaseeead.woff" />
+    <Content Include="MainSiteContent\webfonts\fa-brands-400.eot" />
+    <Content Include="MainSiteContent\webfonts\fa-brands-400.ttf" />
+    <Content Include="MainSiteContent\webfonts\fa-brands-400.woff" />
+    <Content Include="MainSiteContent\webfonts\fa-brands-400.woff2" />
+    <Content Include="MainSiteContent\webfonts\fa-brands-400d41d.eot" />
+    <Content Include="MainSiteContent\webfonts\fa-regular-400.eot" />
+    <Content Include="MainSiteContent\webfonts\fa-regular-400.ttf" />
+    <Content Include="MainSiteContent\webfonts\fa-regular-400.woff" />
+    <Content Include="MainSiteContent\webfonts\fa-regular-400.woff2" />
+    <Content Include="MainSiteContent\webfonts\fa-regular-400d41d.eot" />
+    <Content Include="MainSiteContent\webfonts\fa-solid-900.eot" />
+    <Content Include="MainSiteContent\webfonts\fa-solid-900.ttf" />
+    <Content Include="MainSiteContent\webfonts\fa-solid-900.woff" />
+    <Content Include="MainSiteContent\webfonts\fa-solid-900.woff2" />
+    <Content Include="MainSiteContent\webfonts\fa-solid-900d41d.eot" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\ElegantIcons.eot" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\ElegantIcons.ttf" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\ElegantIcons.woff" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\ElegantIconsd41d.eot" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\fontello4508.eot" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\fontello4508.ttf" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\fontello4508.woff" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\Glyphter.eot" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\Glyphter.ttf" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\Glyphter.woff" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\Glyphterd41d.eot" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\Pe-icon-7-strokebb1d.eot" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\Pe-icon-7-strokebb1d.ttf" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\Pe-icon-7-strokebb1d.woff" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\Pe-icon-7-stroked41d.eot" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\themify9f24.eot" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\themify9f24.ttf" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\themify9f24.woff" />
+    <Content Include="MainSiteContent\css\icon_fonts\font\themifyd41d.eot" />
+    <Content Include="MainSiteContent\images\about\emptimesheet11.webp" />
+    <Content Include="MainSiteContent\images\about\iloveimg-converted %2814%29.zip" />
+    <Content Include="MainSiteContent\images\about\trackingswimg7.webp" />
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\TimeTRackingSoftware.cshtml" />
+    <Content Include="Views\Home\EmployeeTimesheet.cshtml" />
+    <Content Include="Views\Home\RemoteEmployeeExperience.cshtml" />
+    <Content Include="Views\Home\EmployeeProductivitySoftware.cshtml" />
+    <Content Include="Views\Home\OvertimeTracker.cshtml" />
+    <Content Include="Views\Home\RemoteWorkSoftware.cshtml" />
+    <Content Include="Views\Home\SoftwareDevelopment.cshtml" />
+    <Content Include="Views\Home\FreelanceTimeTracker.cshtml" />
+    <Content Include="Views\Home\Windowapp.cshtml" />
+    <Content Include="Views\Home\window.cshtml" />
+    <Content Include="Views\Home\Mobile.cshtml" />
+    <Content Include="Views\Home\Android.cshtml" />
+    <Content Include="Views\Home\ios.cshtml" />
+    <Content Include="Views\Home\GoogleChromeExtension.cshtml" />
+    <Content Include="Views\Home\Price.cshtml" />
+    <Content Include="Views\Home\SignIn.cshtml" />
+    <Content Include="Views\Home\Register.cshtml" />
+    <Content Include="Views\Home\ChooseStarterPlan.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64668</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44316/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

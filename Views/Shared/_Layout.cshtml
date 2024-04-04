@@ -1,0 +1,498 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="~/MainSiteContent/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/MainSiteContent/css/all.min.css">
+    <link rel="stylesheet" href="~/MainSiteContent/css/animate.css">
+    <link rel="stylesheet" href="~/MainSiteContent/css/flaticon.css">
+    <link rel="stylesheet" href="~/MainSiteContent/css/lightcase.css">
+    <link rel="stylesheet" href="~/MainSiteContent/css/odometer.css">
+    <link rel="stylesheet" href="~/MainSiteContent/css/swiper.min.css">
+    <link rel="stylesheet" href="~/MainSiteContent/css/nice-select.css">
+    <link rel="stylesheet" href="~/MainSiteContent/css/main.css">
+
+    <link rel="shortcut icon" href="~/MainSiteContent/images/favicon.png" type="image/x-icon">
+
+    <title>Sumago Tracking System</title>
+</head>
+
+
+<body>
+    <!-- ==========Preloader========== -->
+    @*<div class="preloader">
+            <div class="preloader-wrapper">
+                <img src="~/MainSiteContent/css/ajax-loader.gif" alt="ajax-loader">
+            </div>
+        </div>*@
+    <!-- ==========Preloader========== -->
+    <!-- ==========scrolltotop========== -->
+    @*<a href="#0" class="scrollToTop" title="ScrollToTop">
+            <img src="~/MainSiteContent/images/rocket.png" alt="rocket">
+        </a>*@
+    <!-- ==========scrolltotop========== -->
+    <!-- ==========header-section========== -->
+    <header class="header-section">
+        <div class="header-top d-none d-md-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <ul class="mail-call d-flex flex-wrap">
+                            <li class="mr-3 mr-lg-4">
+                                <a href="Tel:839394845">
+                                    <i class="flaticon-phone-call"></i>
+                                    <!-- <i class="fas fa-phone-square"></i> -->
+                                    +83530388815
+                                </a>
+                            </li>
+                            <li>
+                                <a href="info@sumagoinfotech.com">
+                                    <i class="flaticon-envelope"></i>
+                                    <!-- <i class="fas fa-envelope"></i> -->
+                                    info@sumagoinfotech.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xl-4">
+                        <ul class="social">
+                            <li>
+                                <a href="#0">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xl-2">
+                        <ul class="d-flex flex-wrap justify-content-end account">
+                            <li>
+                                <a href="@Url.Action("SignIn","Home")">Login</a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Register","Home")">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="~/MainSiteContent/images/logo/sumagoimg.jpg" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="menu ml-auto">
+                        <li>
+                            <a href="#0">Features</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="@Url.Action("TimeTRackingSoftware","Home")">Time Tracking Software</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("EmployeeTimesheet","Home")">Employee Timesheet</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("EmployeeTimesheet","Home")">Remote Employee Experience</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("EmployeeProductivitySoftware","Home")">Employee Productivity Software</a>
+                                </li>
+                            </ul>
+                        </li>
+                        @*<li>
+                                <a href="about.html">About</a>
+                            </li>*@
+                        <li>
+                            <a href="#0">How it Works</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="@Url.Action("RemoteWorkSoftware","Home")">Remote Work Software</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("EmployeeTimesheet","Home")">Software Development</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("FreelanceTimeTracker","Home")">Freelance Time Tracking</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#0">Apps</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="shop.html"><b>Desktop</b></a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Windowapp","Home")">Window</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("EmployeeTimesheet","Home")">Chrome OS</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("EmployeeTimesheet","Home")"><b>Mobile</b></a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Android","Home")">Android</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("EmployeeTimesheet","Home")">IOS</a>
+                                </li>
+                                <li>
+                                <li>
+                                    <a href="@Url.Action("EmployeeTimesheet","Home")"><b>Web</b></a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("GoogleChromeExtension","Home")">Google Chrome Extension</a>
+                                </li>
+
+                                <li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Price","Home")">Price</a>
+                            <!--<ul class="submenu">
+                                <li>
+                                    <a href="#0">Instructors</a>
+                                    <ul class="submenu">-->
+                            @*<li>
+                                    <a href="instructors.html">Instructors</a>
+                                </li>*@
+                            @*<li>
+                                    <a href="instructor-profile.html">Instructors Details</a>
+                                </li>*@
+                            <!--</ul>
+                            </li>-->
+                            @*<li>
+                                    <a href="gallery.html">Gallery</a>
+                                </li>*@
+                            @*<li>
+                                    <a href="#0">Event</a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="event.html">Event</a>
+                                        </li>
+
+                                    </ul>
+                                </li>*@
+
+
+                            @*<li>
+                                    <a href="privacy.html">privacy</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">faq</a>
+                                </li>
+                                <li>
+                                    <a href="404.html">404</a>
+                                </li>*@
+                            <!--</ul>-->
+                        </li>
+                        <li>
+                            <a href="@Url.Action("SignIn","Home")">Sign In</a>
+                            @*<ul class="submenu">
+                                    <li>
+                                        <a href="blog-grid.html">blog grid</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-classic.html">blog classic</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-details.html">blog details</a>
+                                    </li>
+                                </ul>*@
+                        </li>
+                        @*<li>
+                                <a href="#0">Account</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="sign-in.html">sign in</a>
+                                    </li>
+                                    <li>
+                                        <a href="sign-up.html">sign up</a>
+                                    </li>
+                                </ul>
+                            </li>*@
+                        @*<li>
+                                <a href="contact.html">Contact</a>
+                            </li>*@
+                    </ul>
+                    <div class="header-bar d-lg-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="search-area">
+                        <li>
+                            <a class="search-bar" href="#0">
+                                <i class="flaticon-magnifying-glass"></i>
+                            </a>
+                        </li>
+                        @*<li>
+                                <a id="cart-button" href="#0">
+                                    <i class="flaticon-shopping-cart"></i>
+                                </a>
+                            </li>*@
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="search-form-area">
+        <span class="hide-form">
+            <i class="fas fa-times"></i>
+        </span>
+        <form class="search-form">
+            <input type="text" placeholder="Search Here">
+            <button type="submit"><i class="flaticon-search"></i></button>
+        </form>
+    </div>
+    <!-- ===========Header Cart=========== -->
+    <div id="body-overlay" class="body-overlay"></div>
+    <div class="cart-sidebar-area" id="cart-sidebar-area">
+        <div class="top-content">
+            <a href="index.html" class="logo">
+                <img src="~/MainSiteContent/images/logo/footer-logo.png" alt="logo">
+            </a>
+            <span class="side-sidebar-close-btn"><i class="fas fa-times"></i></span>
+        </div>
+        <div class="bottom-content">
+            <div class="cart-products">
+                <h4 class="title">Shopping cart</h4>
+                <div class="single-product-item">
+                    <div class="thumb">
+                        <img src="~/MainSiteContent/images/shop/shop01.png" alt="shop">
+                    </div>
+                    <div class="content">
+                        <h4 class="title">Swimming Shoes</h4>
+                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
+                        <a href="#" class="remove-cart">Remove</a>
+                    </div>
+                </div>
+                <div class="single-product-item">
+                    <div class="thumb">
+                        <img src="~/MainSiteContent/images/shop/shop02.png" alt="shop">
+                    </div>
+                    <div class="content">
+                        <h4 class="title">Water Glass</h4>
+                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
+                        <a href="#" class="remove-cart">Remove</a>
+                    </div>
+                </div>
+                <div class="single-product-item">
+                    <div class="thumb">
+                        <img src="~/MainSiteContent/images/shop/shop03.png" alt="shop">
+                    </div>
+                    <div class="content">
+                        <h4 class="title">Support Suit</h4>
+                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
+                        <a href="#" class="remove-cart">Remove</a>
+                    </div>
+                </div>
+                <div class="single-product-item">
+                    <div class="thumb">
+                        <img src="~/MainSiteContent/images/shop/shop06.png" alt="shop">
+                    </div>
+                    <div class="content">
+                        <h4 class="title">Stop Watch</h4>
+                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
+                        <a href="#" class="remove-cart">Remove</a>
+                    </div>
+                </div>
+                <div class="single-product-item">
+                    <div class="thumb">
+                        <img src="~/MainSiteContent/images/shop/shop05.png" alt="shop">
+                    </div>
+                    <div class="content">
+                        <h4 class="title">Support Ring</h4>
+                        <div class="price"><span class="pprice">$80.00</span> <del class="dprice">$120.00</del></div>
+                        <a href="#" class="remove-cart">Remove</a>
+                    </div>
+                </div>
+                <div class="btn-wrapper text-center">
+                    <a href="checkout.html" class="custom-button active">Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div> @RenderBody();</div>
+
+  
+   
+    <!-- Responsive Html Code created by : Shift Code Design -->
+    <footer class="footer--light">
+        <div class="footer-big">
+            <!-- start .container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-widget">
+                            <div class="widget-about">
+                                <img decoding="async" src="images/bg-1.png" alt="" class="img-fluid">
+                                @*<p>There are many variations of users of YouTube available.</p>*@
+                                <ul class="contact-details">
+                                    <li>
+                                        <i class="fas fa-phone-alt"></i> Call Us:
+                                        <a href="#">8530388815</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-envelope-open-text"></i>
+                                        <a href="#">info@sumagoinfotech.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                        <!-- Responsive Html Code created by : Shift Code Design -->
+                    </div>
+                    <!-- end /.col-lg-4 -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-widget">
+                            <div class="footer-menu">
+                                <h4 class="footer-widget-title">Software</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">Features overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Solutions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Free time tracking app</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Integrations</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Download app</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Demo</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Time tracking API</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Request a feature</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end /.footer-menu -->
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                        <!-- Responsive Html Code created by : Shift Code Design -->
+                    </div>
+                    <!-- end /.col-lg-3 -->
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-widget">
+                            <div class="footer-menu">
+                                <h4 class="footer-widget-title">Learning center</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">Time tracking resources</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Workforce management resources</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Business resources</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                            <!-- end /.footer-menu -->
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- end /.col-lg-3 -->
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-widget">
+                            <div class="footer-menu p-0">
+                                <h4 class="footer-widget-title">More</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">Help Center</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Status</a>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                            <!-- end /.footer-menu -->
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- Ends: .col-lg-3 -->
+
+                </div>
+                <!-- end /.row -->
+            </div>
+            <!-- end /.container -->
+        </div>
+        <!-- end /.footer-big -->
+        <!-- Responsive Html Code created by : Shift Code Design -->
+
+        <div class="mini-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright-text">
+                            <p>
+                                © 2024
+                                <a href="#">Sumago Infotech</a>. All rights reserved.
+                              
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div><br></div>
+  
+
+    <script src="~/MainSiteContent/js/jquery-3.3.1.min.js"></script>
+    <script src="~/MainSiteContent/js/modernizr-3.6.0.min.js"></script>
+    <script src="~/MainSiteContent/js/plugins.js"></script>
+    <script src="~/MainSiteContent/js/bootstrap.min.js"></script>
+    <script src="~/MainSiteContent/js/isotope.pkgd.min.js"></script>
+    <script src="~/MainSiteContent/js/jquery.ripples-min.js"></script>
+    <script src="~/MainSiteContent/js/lightcase.js"></script>
+    <script src="~/MainSiteContent/js/swiper.min.js"></script>
+    <script src="~/MainSiteContent/js/wow.min.js"></script>
+    <script src="~/MainSiteContent/js/countdown.min.js"></script>
+    <script src="~/MainSiteContent/js/odometer.min.js"></script>
+    <script src="~/MainSiteContent/js/viewport.jquery.js"></script>
+    <script src="~/MainSiteContent/js/nice-select.js"></script>
+    <script src="~/MainSiteContent/js/main.js"></script>
+</body>
+</html>
